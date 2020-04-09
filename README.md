@@ -20,7 +20,7 @@ yarn add @viget/tailwindcss-plugins -D
 
 ## Usage
 
-Simply register the available plugins in your tailwindcss.config.js file.
+Simply register the available plugins in your tailwindcss.config.js file, and follow the usage instructions for each [plugin](plugins) above.
 
 ```
 plugins: [
