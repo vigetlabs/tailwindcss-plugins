@@ -4,7 +4,6 @@ This plugin wraps up a collection of other plugins we've written for [Tailwind C
 
 * blend
 * flex-basis
-* group-focus
 * parent-expanded
 * parent-open
 * rect
