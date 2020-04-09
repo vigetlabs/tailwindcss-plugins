@@ -1,3 +1,0 @@
-# group-focus
-
-TODO
