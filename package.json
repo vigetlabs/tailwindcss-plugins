@@ -1,0 +1,23 @@
+{
+  "name": "@viget/tailwindcss-plugins",
+  "version": "0.0.1",
+  "description": "A collection of custom plugins for Tailwind CSS.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vigetlabs/tailwindcss-plugins.git"
+  },
+  "keywords": [
+    "tailwind",
+    "tailwindcss",
+    "tailwindcss-plugin"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vigetlabs/tailwindcss-plugins/issues"
+  },
+  "homepage": "https://github.com/vigetlabs/tailwindcss-plugins#readme",
+  "devDependencies": {
+    "tailwindcss": "^1.2.0"
+  }
+}
