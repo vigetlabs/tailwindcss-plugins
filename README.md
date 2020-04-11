@@ -31,11 +31,11 @@ plugins: [
 
 ## Notes
 
-Additionally, there are some other plugin examples included in this repository in the **other** directory. These are not registerable in your Tailwind config. The reasons for this are that these represent plugins which:
+Additionally, there are some other plugin examples included in this repository in the **examples** directory. These are not registerable in your Tailwind config. The reasons for this are that these represent plugins which:
 
 * could have a number of different outputs that require varying approaches
 * have a highly specific project use case
-* override a core plugin in Tailwind
+* are an alternate approach to one of the registerable plugins
 
 For example, heading components could be done any number of ways. They could be simple or complex, fixed or responsive, wrapped for rich text or classnames only. For this reason, we've included several examples of these. If you need one of these plugins, it is recommended to copy and paste the plugin code into a custom plugin for your project.
 
