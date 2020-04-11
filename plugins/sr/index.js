@@ -15,7 +15,7 @@ module.exports = () => ({ addUtilities }) => {
       height: 'auto',
       margin: '0',
       overflow: 'visible',
-      position: 'relative',
+      position: 'static',
       width: 'auto'
     }
   }
