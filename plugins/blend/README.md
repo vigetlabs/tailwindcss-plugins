@@ -4,7 +4,7 @@ This plugin adds [mix-blend-mode](https://developer.mozilla.org/en-US/docs/Web/C
 
 ## Usage
 
-```
+```js
 theme: {
   blend: [
     'multiply',
@@ -21,7 +21,7 @@ plugins: [
 
 The above configuration would create the following css, as well as their responsive variants:
 
-```
+```css
 .blend-multiply {
   mix-blend-mode: multiply;
 }

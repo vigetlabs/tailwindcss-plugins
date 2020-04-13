@@ -6,7 +6,7 @@ This plugin adds screenreader utilities to Tailwind. Tailwind ships with its own
 
 ## Usage
 
-```
+```js
 variants: {
   sr: ['responsive'], // defaults to []
 },
@@ -20,7 +20,7 @@ plugins: [
 
 The above configuration would create the following css, as well as their responsive variants:
 
-```
+```css
 .sr-only {
   border: 0;
   clip: rect(0 0 0 0);
