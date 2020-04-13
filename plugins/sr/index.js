@@ -1,4 +1,6 @@
-module.exports = () => ({ addUtilities, variants }) => {
+const plugin = require('tailwindcss/plugin')
+
+module.exports = plugin(({ addUtilities, variants }) => {
   const pluginVariants = variants('sr', [])
 
   const sr = {
@@ -23,4 +25,4 @@ module.exports = () => ({ addUtilities, variants }) => {
   }
 
   addUtilities(sr, pluginVariants)
-}
+})
