@@ -15,7 +15,7 @@ variants: {
   rect: ['responsive'],
 },
 plugins: [
-  require('@viget/tailwindcss-plugins/rect')(),
+  require('@viget/tailwindcss-plugins/rect'),
 ],
 ```
 

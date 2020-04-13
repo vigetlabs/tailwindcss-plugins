@@ -1,4 +1,6 @@
-module.exports = () => ({ addUtilities, theme, variants }) => {
+const plugin = require('tailwindcss/plugin')
+
+module.exports = plugin(({ addUtilities, theme, variants }) => {
   addUtilities(
     theme('blend').map(type => ({
       [`.blend-${type}`]: {
@@ -7,4 +9,4 @@ module.exports = () => ({ addUtilities, theme, variants }) => {
     })),
     variants('blend', [])
   )
-}
+})

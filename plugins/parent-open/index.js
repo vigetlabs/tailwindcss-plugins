@@ -1,6 +1,7 @@
+const plugin = require('tailwindcss/plugin')
 const selectorParser = require('postcss-selector-parser')
 
-module.exports = () => ({ addVariant, e }) => {
+module.exports = plugin(({ addVariant }) => {
   addVariant('parent-open', ({ modifySelectors, separator }) => {
     return modifySelectors(({ selector }) => {
       return selectorParser(selectors => {
@@ -11,4 +12,4 @@ module.exports = () => ({ addVariant, e }) => {
       }).processSync(selector)
     })
   })
-}
+})
