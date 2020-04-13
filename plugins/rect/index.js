@@ -1,4 +1,6 @@
-module.exports = rem => ({ addUtilities, e, theme, variants }) => {
+const rem = px => `${px / 16}rem`
+
+module.exports = () => ({ addUtilities, e, theme, variants }) => {
   const pluginConfig = theme('rect', {})
   const pluginVariants = variants('rect', [])
 
