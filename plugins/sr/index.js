@@ -1,4 +1,6 @@
-module.exports = () => ({ addUtilities }) => {
+module.exports = () => ({ addUtilities, variants }) => {
+  const pluginVariants = variants('sr', [])
+
   const sr = {
     '.sr-only': {
       border: '0',
@@ -20,7 +22,5 @@ module.exports = () => ({ addUtilities }) => {
     }
   }
 
-  addUtilities(sr, {
-    variants: []
-  })
+  addUtilities(sr, pluginVariants)
 }
