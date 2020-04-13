@@ -4,7 +4,7 @@ This plugin adds rect (width + height) sizing utilities to Tailwind. It is diffe
 
 ## Usage
 
-```
+```js
 theme: {
   rect: {
     target: ['44px', '44px'],
@@ -21,7 +21,7 @@ plugins: [
 
 The above configuration would create the following css, as well as their responsive variants:
 
-```
+```css
 .rect-target {
   width: 44px;
   height: 44px;

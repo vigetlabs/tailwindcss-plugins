@@ -4,7 +4,7 @@ This plugin adds parent-expanded variants to Tailwind. This is useful for access
 
 ## Usage
 
-```
+```js
 theme: {
   rotate: {
     '180': '180deg',
@@ -21,7 +21,7 @@ plugins: [
 
 The above configuration would create the following css:
 
-```
+```css
 [aria-expanded=true] .parent-expanded\:rotate-180 {
   transform: rotate(180deg);
 }

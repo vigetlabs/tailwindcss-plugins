@@ -4,7 +4,7 @@ This plugin adds [flex-basis](https://developer.mozilla.org/en-US/docs/Web/CSS/f
 
 ## Usage
 
-```
+```js
 theme: {
   flexBasis: {
     '200': '200px',
@@ -20,7 +20,7 @@ plugins: [
 
 The above configuration would create the following css, as well as their responsive variants:
 
-```
+```css
 .flex-basis-140 {
   flex-basis: 140px
 }

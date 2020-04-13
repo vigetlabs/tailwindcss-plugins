@@ -4,7 +4,7 @@ This plugin adds parent-open variants to Tailwind. This is intended for use with
 
 ## Usage
 
-```
+```js
 theme: {
   rotate: {
     '180': '180deg',
@@ -21,7 +21,7 @@ plugins: [
 
 The above configuration would create the following css:
 
-```
+```css
 [open] .parent-open\:rotate-180 {
   transform: rotate(180deg);
 }
