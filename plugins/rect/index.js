@@ -15,7 +15,5 @@ module.exports = () => ({ addUtilities, e, theme, variants }) => {
     }
   })
 
-  addUtilities(utilities, {
-    variants: pluginVariants
-  })
+  addUtilities(utilities, pluginVariants)
 }
