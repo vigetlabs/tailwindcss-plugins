@@ -10,7 +10,7 @@ module.exports = plugin(({ addUtilities, variants }) => {
       height: '1px',
       margin: '-1px',
       overflow: 'hidden',
-      padding: '0px',
+      padding: '0',
       position: 'absolute',
       width: '1px'
     },
