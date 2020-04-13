@@ -1,6 +1,6 @@
 # rect
 
-This plugin adds rect (width + height) sizing utilities to Tailwind, which requires the rem function from [FedPack's Tailwind config](https://github.com/vigetlabs/FedPack/blob/master/tailwind.config.js).
+This plugin adds rect (width + height) sizing utilities to Tailwind.
 
 ## Usage
 
@@ -15,7 +15,7 @@ variants: {
   rect: ['responsive'],
 },
 plugins: [
-  require('@viget/tailwindcss-plugins/rect')(rem),
+  require('@viget/tailwindcss-plugins/rect')(),
 ],
 ```
 
