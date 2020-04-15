@@ -1,4 +1,6 @@
-module.exports = () => ({ addUtilities, e, theme, variants }) => {
+const plugin = require('tailwindcss/plugin')
+
+module.exports = plugin(({ addUtilities, e, theme, variants }) => {
   const pluginConfig = theme('flexBasis', {})
   const pluginVariants = variants('flexBasis', [])
 
@@ -11,4 +13,4 @@ module.exports = () => ({ addUtilities, e, theme, variants }) => {
   })
 
   addUtilities(utilities, pluginVariants)
-}
+})
