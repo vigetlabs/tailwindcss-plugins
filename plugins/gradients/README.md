@@ -23,10 +23,10 @@ The above configuration would create the following css, as well as their respons
 
 ```css
 .gradient-90-blue {
-    background-image: linear-gradient(90deg, ${theme('colors.blue.400')} 50%, transparent);
+    background-image: linear-gradient(90deg, #0045bb 50%, transparent);
 }
 
 .gradient-270-blue {
-    background-image: linear-gradient(270deg, ${theme('colors.blue.400')}, transparent);
+    background-image: linear-gradient(270deg, #0045bb, transparent);
 }
 ```
