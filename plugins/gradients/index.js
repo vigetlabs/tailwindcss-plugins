@@ -1,12 +1,17 @@
-module.exports = () => ({ addUtilities, theme, variants }) => {
-  addUtilities(
-    Object.entries(theme('gradients')).map(([key, value]) => {
-      return {
-        [`.gradient-${key}`]: {
-          'background-image': `linear-gradient(${value})`
-        }
+const plugin = require('tailwindcss/plugin')
+
+module.exports = plugin(({ addUtilities, e, theme, variants }) => {
+  const pluginConfig = theme('gradients', {})
+  const pluginVariants = variants('gradients', [])
+
+  const utilities = Object.keys(pluginConfig).map(([key, value]) => {
+    return {
+      [`.gradient-${key}`]: {
+        'background-image': `linear-gradient(${value})`
       }
-    }),
-    variants('gradients', [])
-  )
-}
+    }
+  })
+
+  addUtilities(utilities, pluginVariants)
+})
+
