@@ -1,4 +1,6 @@
-module.exports = () => ({ addVariant, e }) => {
+const plugin = require('tailwindcss/plugin')
+
+module.exports = plugin(({ addVariant, e }) => {
   addVariant('group-focus-hover', ({ modifySelectors, separator }) => {
     modifySelectors(({ className }) => {
       return `
@@ -7,4 +9,4 @@ module.exports = () => ({ addVariant, e }) => {
       `
     })
   })
-}
+})
