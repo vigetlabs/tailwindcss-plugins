@@ -4,11 +4,11 @@ module.exports = plugin(({ addUtilities, e, theme, variants }) => {
   const pluginConfig = theme('flexBasis', {})
   const pluginVariants = variants('flexBasis', [])
 
-  const utilities = Object.keys(pluginConfig).map(key => {
+  const utilities = Object.keys(pluginConfig).map((key) => {
     return {
       [`.${e(`flex-basis-${key}`)}`]: {
-        'flex-basis': pluginConfig[key]
-      }
+        'flex-basis': pluginConfig[key],
+      },
     }
   })
 

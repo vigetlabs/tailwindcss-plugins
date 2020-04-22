@@ -12,7 +12,7 @@ module.exports = plugin(({ addUtilities, variants }) => {
       overflow: 'hidden',
       padding: '0',
       position: 'absolute',
-      width: '1px'
+      width: '1px',
     },
     '.sr-undo': {
       clip: 'auto',
@@ -20,8 +20,8 @@ module.exports = plugin(({ addUtilities, variants }) => {
       margin: '0',
       overflow: 'visible',
       position: 'static',
-      width: 'auto'
-    }
+      width: 'auto',
+    },
   }
 
   addUtilities(sr, pluginVariants)

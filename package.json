@@ -1,6 +1,9 @@
 {
   "name": "@viget/tailwindcss-plugins",
   "version": "0.0.2",
+  "scripts": {
+    "format": "prettier --write './**/*.js' --ignore-path .gitignore"
+  },
   "description": "A collection of custom plugins for Tailwind CSS.",
   "main": "index.js",
   "repository": {
@@ -18,6 +21,7 @@
   },
   "homepage": "https://github.com/vigetlabs/tailwindcss-plugins#readme",
   "devDependencies": {
+    "prettier": "^2.0.5",
     "tailwindcss": "^1.2.0"
   }
 }
