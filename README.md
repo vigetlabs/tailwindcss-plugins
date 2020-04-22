@@ -11,6 +11,8 @@ This plugin wraps up a collection of other plugins we've written for [Tailwind C
 * parent-open
 * rect
 
+An object of alpha values in hexadecimal is also requireable. [Read more about manipulating color transparency in Tailwind](/examples/alpha/README.md).
+
 ## Installation
 
 ```bash
