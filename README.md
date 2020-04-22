@@ -10,7 +10,7 @@ This plugin wraps up a collection of other plugins we've written for [Tailwind C
 
 ## Installation
 
-```
+```bash
 # install via npm
 npm i @viget/tailwindcss-plugins -D
 
@@ -22,7 +22,7 @@ yarn add @viget/tailwindcss-plugins -D
 
 Simply register the available plugins in your tailwindcss.config.js file, and follow the usage instructions for each [plugin](plugins) above.
 
-```
+```js
 plugins: [
   require('@viget/tailwindcss-plugins/PLUGIN_NAME'),
   // ...
