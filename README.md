@@ -2,7 +2,10 @@
 
 This plugin wraps up a collection of other plugins we've written for [Tailwind CSS](https://tailwindcss.com/). Plugins include:
 
+* animation
+* background
 * blend
+* filter
 * flex-basis
 * parent-expanded
 * parent-open
