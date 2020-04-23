@@ -1,6 +1,6 @@
 {
   "name": "@viget/tailwindcss-plugins",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A collection of custom plugins for Tailwind CSS.",
   "main": "index.js",
   "repository": {
