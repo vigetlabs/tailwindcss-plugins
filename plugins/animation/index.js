@@ -1,10 +1,10 @@
 const plugin = require('tailwindcss/plugin')
 
-module.exports = plugin(({ addUtilities, theme }) => {
+module.exports = plugin(({ addUtilities, e, theme }) => {
   const pluginConfig = theme('animation', {})
 
   const utilities = Object.entries(pluginConfig).map(([name, value]) => ({
-    [`.animation-${name}`]: {
+    [`.${e(`animation-${name}`)}`]: {
       animation: `${name} ${value.animation}`,
     },
 

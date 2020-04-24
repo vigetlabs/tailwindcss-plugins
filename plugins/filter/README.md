@@ -7,11 +7,12 @@ This plugin adds [filter](https://developer.mozilla.org/en-US/docs/Web/CSS/filte
 ```js
 theme: {
   filter: {
-  blur: {
-    10: '10px',
-  },
-  saturate: {
-    0: 0,
+    blur: {
+      10: '10px',
+    },
+    saturate: {
+      0: 0,
+    },
   },
 },
 variants: {
