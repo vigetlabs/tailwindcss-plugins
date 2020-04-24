@@ -8,7 +8,7 @@ This plugin adds [background](https://developer.mozilla.org/en-US/docs/Web/CSS/b
 theme: {
   background: {
     glow:
-      'radial-gradient(58.13% 57.41% at 49.33% 78.4%, rgba(208, 2, 27, 0.6) 0%, rgba(208, 2, 27, 0) 100%)',
+      'radial-gradient(58.13% 57.41% at 49.33% 78.4%, rgba(208, 2, 27, 0.6) 0%)',
     texture: `#111 url('../assets/images/texture.png') 0 0 / 24px 26px`,
   },
 },
@@ -24,7 +24,7 @@ The above configuration would create the following css, as well as their respons
 
 ```css
 .bg-glow {
-  background: radial-gradient(58.13% 57.41% at 49.33% 78.4%, rgba(208, 2, 27, 0.6) 0%, rgba(208, 2, 27, 0) 100%);
+  background: radial-gradient(58.13% 57.41% at 49.33% 78.4%, rgba(208, 2, 27, 0.6) 0%);
 }
 .bg-texture {
   background: #111 url('../assets/images/texture.png') 0 0 / 24px 26px;
