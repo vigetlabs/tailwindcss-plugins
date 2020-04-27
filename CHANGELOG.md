@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.0.4] - 04-27-2020
+### Changed
+- Added prettier and formatted project
+- Added animation, background and filter plugins
+- Added alpha.js as requireable utility
+
 ## [0.0.3] - 04-14-2020
 ### Changed
 - Fixed flex basis plugin

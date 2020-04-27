@@ -1,6 +1,6 @@
 {
   "name": "@viget/tailwindcss-plugins",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "format": "prettier --write './**/*.js' --ignore-path .gitignore"
   },
