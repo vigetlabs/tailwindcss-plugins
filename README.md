@@ -1,17 +1,19 @@
 # Tailwind CSS Plugins
 
-This plugin wraps up a collection of other plugins we've written for [Tailwind CSS](https://tailwindcss.com/). Plugins include:
+This plugin wraps up a collection of other plugins we've written for [Tailwind CSS](https://tailwindcss.com/).
 
-* animation
-* background
-* blend
-* filter
-* flex-basis
-* parent-expanded
-* parent-open
-* rect
+Plugins include:
+* [animation](/plugins/animation/)
+* [background](/plugins/background/)
+* [blend](/plugins/blend/)
+* [filter](/plugins/filter/)
+* [flex-basis](/plugins/flex-basis/)
+* [parent-expanded](/plugins/parent-expanded/)
+* [parent-open](/plugins/parent-open/)
+* [rect](/plugins/rect/)
 
-An object of alpha values in hexadecimal is also requireable. [Read more about manipulating color transparency in Tailwind](/examples/alpha/README.md).
+Utilities include:
+* [hex alpha reference](/utilities/alpha/)
 
 ## Installation
 
@@ -25,9 +27,13 @@ yarn add @viget/tailwindcss-plugins -D
 
 ## Usage
 
-Simply register the available plugins in your tailwindcss.config.js file, and follow the usage instructions for each [plugin](plugins) above.
+Simply require the plugins or utilities in your `tailwindcss.config.js` file, and follow the usage instructions for each documented in its folder.
 
 ```
+// utilities
+const a = require('@viget/tailwindcss-plugins/utilities/alpha')
+
+// plugins
 plugins: [
   require('@viget/tailwindcss-plugins/PLUGIN_NAME'),
   // ...
