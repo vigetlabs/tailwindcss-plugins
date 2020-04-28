@@ -4,7 +4,7 @@ module.exports = plugin(({ addUtilities, e, theme, variants }) => {
   const pluginConfig = theme('filter', {})
   const pluginVariants = variants('filter', [])
 
-  Object.entries(pluginConfig).map(([type, values]) => {
+  const utilities = Object.entries(pluginConfig).map(([type, values]) => {
     return Object.entries(values).map(([name, value]) => ({
       [`.${e(`${type}-${name}`)}`]: {
         filter: `${type}(${value})`,
