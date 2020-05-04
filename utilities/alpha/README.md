@@ -4,8 +4,10 @@ There are many options for manipulating the transparency of colors in your Tailw
 
 For three-digit hex values, like `#fff`, this is a single value: `#fffc`. For six-digits, two values are added: `#ffffffcc`. Unfortunately, these alpha values must be written in hexadecimal, so something like 75% would actually be written as `bf`. To solve this, you can include an object translating these values.
 
+## Usage
+
 ```js
-const a = require('@viget/tailwindcss-plugins/alpha'),
+const a = require('@viget/tailwindcss-plugins/utilities/alpha')
 
 module.exports = {
   theme: {
