@@ -18,7 +18,10 @@ theme: {
       weight: theme('fontWeight.bold')
     },
   })
-}
+},
+plugins: [
+  require('./config/tailwind/plugins/resp-headings'),
+],
 ```
 
 Note: With the exception of `default`, the keys on the `sizes` object should match the keys in your `screens` Tailwind configuration.

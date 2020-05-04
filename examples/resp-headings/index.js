@@ -12,7 +12,7 @@ module.exports = plugin(({ addComponents, e, theme }) => {
       if (key in sizes) {
         mediaQueries.push({
           [`@media (min-width: ${screens[key]})`]: {
-            [`.heading-${name}`]: {
+            [`.${e(`heading-${name}`)}`]: {
               'font-size': sizes[key]
             }
           }
@@ -22,7 +22,7 @@ module.exports = plugin(({ addComponents, e, theme }) => {
 
     return [
       {
-        [`.heading-${name}`]: {
+        [`.${e(`heading-${name}`)}`]: {
           'font-size': sizes['default'],
           'font-weight': weight,
           'letter-spacing': letterSpacing,
