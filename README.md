@@ -15,6 +15,7 @@ Plugins include:
 
 Utilities include:
 * [hex alpha reference](/utilities/alpha/)
+* [helper functions](/utilities/fns/)
 
 ## Installation
 
@@ -33,6 +34,7 @@ Simply require the plugins or utilities in your `tailwindcss.config.js` file, an
 ```js
 // utilities
 const a = require('@viget/tailwindcss-plugins/utilities/alpha')
+const { em, rem, remPair, pxPair } = require('@viget/tailwindcss-plugins/utilities/fns')
 
 // plugins
 plugins: [
