@@ -1,4 +1,4 @@
-# gradients
+# gradient
 
 This plugin adds linear gradient background utilities to Tailwind.
 
@@ -6,16 +6,16 @@ This plugin adds linear gradient background utilities to Tailwind.
 
 ```js
 theme: {
-  gradients: theme => ({
+  gradient: theme => ({
     '90-blue': `90deg, ${theme('colors.blue.400')} 50%, transparent`,
     '270-blue': `270deg, ${theme('colors.blue.400')}, transparent`
   }),
 },
 variants: {
-  gradients: ['responsive'], // defaults to []
+  gradient: ['responsive'], // defaults to []
 },
 plugins: [
-  require('@viget/tailwindcss-plugins/gradients'),
+  require('@viget/tailwindcss-plugins/gradient'),
 ],
 ```
 
