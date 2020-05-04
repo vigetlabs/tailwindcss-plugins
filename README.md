@@ -8,6 +8,7 @@ Plugins include:
 * [blend](/plugins/blend/)
 * [filter](/plugins/filter/)
 * [flex-basis](/plugins/flex-basis/)
+* [gradient](/plugins/gradient/)
 * [parent-expanded](/plugins/parent-expanded/)
 * [parent-open](/plugins/parent-open/)
 * [rect](/plugins/rect/)
