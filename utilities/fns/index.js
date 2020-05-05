@@ -1,4 +1,6 @@
-export const rem = (px) => `${px / 16}rem`
-export const remPair = (px) => ({ [px]: rem(px) })
-export const em = (px) => `${px / 16}em`
-export const pxPair = (px) => ({ [px]: `${px}px` })
+const rem = (px) => `${px / 16}rem`
+const remPair = (px) => ({ [px]: rem(px) })
+const em = (px) => `${px / 16}em`
+const pxPair = (px) => ({ [px]: `${px}px` })
+
+module.exports = { rem, remPair, em, pxPair }
