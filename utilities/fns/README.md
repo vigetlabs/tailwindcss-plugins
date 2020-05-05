@@ -2,8 +2,8 @@
 
 These helpers ease unit conversion and simplify config entries.
 
-- **em()**: Convert pixels into ems
-- **rem()**: Convert pixel values into rems
+- **em()**: Convert pixel value into ems
+- **rem()**: Convert pixel value into rems
 - **remPair()**: Convert pixel value to a rem-based object entry intended for spreading
 - **pxPair()**: Convert pixel value to a pixel-based object entry intended for spreading
 
