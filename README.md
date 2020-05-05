@@ -12,6 +12,7 @@ Plugins include:
 * [parent-expanded](/plugins/parent-expanded/)
 * [parent-open](/plugins/parent-open/)
 * [rect](/plugins/rect/)
+* [sr](/plugins/sr/)
 
 Utilities include:
 * [hex alpha reference](/utilities/alpha/)
