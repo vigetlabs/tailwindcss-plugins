@@ -4,9 +4,9 @@ module.exports = plugin(({ addUtilities, e, theme, variants }) => {
   const pluginConfig = theme('gradient', {})
   const pluginVariants = variants('gradient', [])
 
-  const utilities = Object.keys(pluginConfig).map(([key, value]) => {
+  const utilities = Object.entries(pluginConfig).map(([name, value]) => {
     return {
-      [`.${e(`gradient-${key}`)}`]: {
+      [`.${e(`gradient-${name}`)}`]: {
         'background-image': `linear-gradient(${value})`
       }
     }
