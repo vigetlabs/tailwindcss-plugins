@@ -23,15 +23,15 @@ The above configuration would create the following css, as well as their respons
 
 ```css
 .blend-multiply {
-  mix-blend-mode: multiply
+  mix-blend-mode: multiply;
 }
 .bg-blend-multiply {
-  background-blend-mode: multiply
+  background-blend-mode: multiply;
 }
 .blend-screen {
-  mix-blend-mode: screen
+  mix-blend-mode: screen;
 }
 .bg-blend-screen {
-  background-blend-mode: screen
+  background-blend-mode: screen;
 }
 ```

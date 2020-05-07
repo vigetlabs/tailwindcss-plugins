@@ -22,6 +22,6 @@ The above configuration would create the following css, as well as their respons
 
 ```css
 .flex-basis-200 {
-  flex-basis: 200px
+  flex-basis: 200px;
 }
 ```

@@ -22,7 +22,7 @@ test('it generates the sr classes', () => {
       overflow: hidden;
       padding: 0;
       position: absolute;
-      width: 1px
+      width: 1px;
     }
 
     .sr-undo {
@@ -31,7 +31,7 @@ test('it generates the sr classes', () => {
       margin: 0;
       overflow: visible;
       position: static;
-      width: auto
+      width: auto;
     }
 
     .focus\\:sr-only:focus {
@@ -42,7 +42,7 @@ test('it generates the sr classes', () => {
       overflow: hidden;
       padding: 0;
       position: absolute;
-      width: 1px
+      width: 1px;
     }
 
     .focus\\:sr-undo:focus {
@@ -51,7 +51,7 @@ test('it generates the sr classes', () => {
       margin: 0;
       overflow: visible;
       position: static;
-      width: auto
+      width: auto;
     }
   `
 
