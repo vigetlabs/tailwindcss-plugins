@@ -21,7 +21,7 @@ plugins: [
 The above configuration would create the following css, as well as their responsive variants:
 
 ```css
-.flex-basis-140 {
-  flex-basis: 140px
+.flex-basis-200 {
+  flex-basis: 200px
 }
 ```

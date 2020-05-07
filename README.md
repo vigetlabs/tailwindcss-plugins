@@ -44,6 +44,28 @@ plugins: [
 ],
 ```
 
+## Testing
+
+Run tests:
+```bash
+yarn test
+```
+
+Each plugin is tested using Jest. The easiest way to get started is by looking at existing tests, but in brief each can have:
+
+- Output (required): Define what the generated CSS should look like. Jest makes this easy to debug but some things to remember:
+  - Double-escape `:`, i.e. `\\:`
+  - Order matters
+  - Testing variants also generates the basic version of the class
+- Config (almost always required): Define the user config for generating the CSS. For a plugin like [sr](/plugins/sr), the only configurable thing we are testing is variants, but most plugins require a theme passed as well. Testing variant plugins requires also passing an array of enabled `corePlugins`, as these are all turned off by default (see [parent-expanded](/plugins/parent-expanded) for an example)
+
+### Helpers
+Make sure to use the proper helper for your plugin, which just depends on if you are adding components or utilities:
+- generateComponents()
+- generateUtilities()
+
+In addition to passing your plugin and config, these helpers accept a third parameter: a boolean to include the entire default Tailwind config when merging in your options.
+
 ## Notes
 
 Additionally, there are some other plugin examples included in this repository in the **examples** directory. These are not registerable in your Tailwind config. The reasons for this are that these represent plugins which:

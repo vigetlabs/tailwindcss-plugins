@@ -2,7 +2,8 @@
   "name": "@viget/tailwindcss-plugins",
   "version": "0.0.8",
   "scripts": {
-    "format": "prettier --write './**/*.js' --ignore-path .gitignore"
+    "format": "prettier --write './**/*.js' --ignore-path .gitignore",
+    "test": "jest"
   },
   "description": "A collection of custom plugins for Tailwind CSS.",
   "main": "index.js",
@@ -21,6 +22,10 @@
   },
   "homepage": "https://github.com/vigetlabs/tailwindcss-plugins#readme",
   "devDependencies": {
+    "jest": "^26.0.1",
+    "jest-matcher-css": "^1.1.0",
+    "lodash": "^4.17.15",
+    "postcss": "^7.0.29",
     "prettier": "^2.0.5",
     "tailwindcss": "^1.2.0"
   }

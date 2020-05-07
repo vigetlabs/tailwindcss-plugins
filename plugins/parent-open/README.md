@@ -22,7 +22,11 @@ plugins: [
 The above configuration would create the following css:
 
 ```css
+.rotate-180 {
+  --transform-rotate: 180deg;
+}
+
 [open] .parent-open\:rotate-180 {
-  transform: rotate(180deg);
+  --transform-rotate: 180deg;
 }
 ```
