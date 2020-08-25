@@ -40,4 +40,23 @@ The above configuration would create the following css, as well as their respons
   position: static;
   width: auto;
 }
+
+.sr-undo-absolute {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: absolute;
+  width: auto;
+}
+```
+
+## Skip Links
+
+The `.sr-undo-absolute` utility is especially helpful for skip links, when you want to preserve `position: absolute`.
+
+For example:
+
+```html
+<a href="#content" class="sr-only focus:sr-undo-absolute">Skip to Main Content</a>
 ```
