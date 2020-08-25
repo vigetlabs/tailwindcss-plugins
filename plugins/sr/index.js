@@ -22,6 +22,14 @@ module.exports = plugin(({ addUtilities, variants }) => {
       position: 'static',
       width: 'auto',
     },
+    '.sr-undo-absolute': {
+      clip: 'auto',
+      height: 'auto',
+      margin: '0',
+      overflow: 'visible',
+      position: 'absolute',
+      width: 'auto',
+    },
   }
 
   addUtilities(sr, pluginVariants)

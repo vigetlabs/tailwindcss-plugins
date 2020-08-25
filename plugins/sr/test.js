@@ -34,6 +34,15 @@ test('it generates the sr classes', () => {
       width: auto;
     }
 
+    .sr-undo-absolute {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: absolute;
+      width: auto;
+    }
+
     .focus\\:sr-only:focus {
       border: 0;
       clip: rect(0 0 0 0);
@@ -51,6 +60,15 @@ test('it generates the sr classes', () => {
       margin: 0;
       overflow: visible;
       position: static;
+      width: auto;
+    }
+
+    .focus\\:sr-undo-absolute:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: absolute;
       width: auto;
     }
   `
