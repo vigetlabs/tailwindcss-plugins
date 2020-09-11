@@ -11,10 +11,13 @@ test('it generates the animate classes', () => {
     theme: {
       animate: {
         triggerClass: '-observed',
-        defaultDuration: 200,
         staggerDelay: {
-          default: 50,
-          100: 100,
+          '100': '100ms',
+          '200': '200ms',
+        },
+        staggerInterval: {
+          default: '100ms',
+          '200': '200ms',
         },
         maxItemIntervalSupport: 5,
         animations: {
@@ -39,21 +42,27 @@ test('it generates the animate classes', () => {
       opacity: 0;
     }
 
-    .animate-fade-left\\.-observed, .stagger-fade-left\\.-observed > * {
+    .animate-fade-left.-observed, .stagger-fade-left.-observed > * {
       transform: translateX(0);
       opacity: 1;
     }
 
-    [class*="animate-"], [class*="stagger-"] > * {
-      transition-duration: 200ms;
+    [class*="stagger-"] > * {
+      --stagger-delay: 0s;
+      transition-delay: calc(var(--animate-index) * 100ms + var(--stagger-delay));
+    }
+
+    .stagger-interval-200 > * {
+      --stagger-delay: 0s;
+      transition-delay: calc(var(--animate-index) * 200ms + var(--stagger-delay));
     }
 
     .stagger-delay-100 > * {
-      transition-delay: calc(var(--animate-index) * 100ms);
+      --stagger-delay: 100ms;
     }
 
-    [class*="stagger-"] > * {
-      transition-delay: calc(var(--animate-index) * 50ms);
+    .stagger-delay-200 > * {
+      --stagger-delay: 200ms;
     }
 
     [class*="stagger"] > *:nth-child(1) {

@@ -4,8 +4,8 @@ module.exports = plugin(({ addUtilities, e, theme }) => {
   const pluginConfig = theme('animate', {})
   const {
     triggerClass,
-    defaultDuration,
     staggerDelay,
+    staggerInterval,
     maxItemIntervalSupport,
     animations,
   } = pluginConfig
@@ -13,32 +13,39 @@ module.exports = plugin(({ addUtilities, e, theme }) => {
   const animationUtilities = Object.entries(animations).map(
     ([name, config]) => ({
       [`.${e(`animate-${name}`)}, .${e(`stagger-${name}`)} > *`]: config.from,
-      [`.${e(`animate-${name}.${triggerClass}`)}, .${e(
-        `stagger-${name}.${triggerClass}`,
-      )} > *`]: config.to,
+      [`.${e(`animate-${name}`)}.${e(triggerClass)},.${e(
+        `stagger-${name}`,
+      )}.${triggerClass} > *`]: config.to,
     }),
   )
 
-  const durationUtilities = [
-    {
-      ['[class*="animate-"], [class*="stagger-"] > *']: {
-        'transition-duration': `${defaultDuration}ms`,
-      },
-    },
-  ]
+  const staggerDefaultUtility = staggerInterval.default
+    ? [
+        {
+          '[class*="stagger-"] > *': {
+            '--stagger-delay': '0s',
+            'transition-delay': `calc(var(--animate-index) * ${staggerInterval.default} + var(--stagger-delay))`,
+          },
+        },
+      ]
+    : []
 
-  const staggerUtilities = Object.entries(staggerDelay).map(([name, value]) => {
-    const selector =
-      name === 'default'
-        ? '[class*="stagger-"] > *'
-        : `.${e(`stagger-delay-${name}`)} > *`
-
-    return {
-      [selector]: {
-        'transition-delay': `calc(var(--animate-index) * ${value}ms)`,
+  const staggerIntervalUtilities = Object.entries(staggerInterval)
+    .filter(([name]) => name !== 'default')
+    .map(([name, value]) => ({
+      [`.${e(`stagger-interval-${name}`)} > *`]: {
+        '--stagger-delay': '0s',
+        'transition-delay': `calc(var(--animate-index) * ${value} + var(--stagger-delay))`,
       },
-    }
-  })
+    }))
+
+  const staggerDelayUtilities = Object.entries(staggerDelay).map(
+    ([name, value]) => ({
+      [`.${e(`stagger-delay-${name}`)} > *`]: {
+        '--stagger-delay': value,
+      },
+    }),
+  )
 
   const nthChildUtilities = [...Array(maxItemIntervalSupport)].map((_, i) => ({
     [`[class*="stagger"] > *:nth-child(${i + 1})`]: {
@@ -48,8 +55,9 @@ module.exports = plugin(({ addUtilities, e, theme }) => {
 
   addUtilities([
     ...animationUtilities,
-    ...durationUtilities,
-    ...staggerUtilities,
+    ...staggerDefaultUtility,
+    ...staggerIntervalUtilities,
+    ...staggerDelayUtilities,
     ...nthChildUtilities,
   ])
 })
