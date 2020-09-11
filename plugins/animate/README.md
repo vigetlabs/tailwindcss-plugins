@@ -32,6 +32,13 @@ theme: {
           opacity: 1,
         },
       },
+      'zoom-in': {
+        from: {
+          transform: 'scale(0.8)',
+          opacity: 0,
+        },
+        // "to" is optional
+      },
     },
   }),
 },
@@ -110,4 +117,4 @@ The `transition-delay` used to power the staggered animation are calculated via 
 
 ### `animations`
 
-Specify the animation styles. The first-level object names the animation, which in turn must specify `from` and `to` objects. These objects accept the same [CSS-in-JS syntax as Tailwind](https://tailwindcss.com/docs/plugins#css-in-js-syntax).
+Specify the animation styles. The first-level object names the animation, which in turn **must** specify a `from` object and optionally a `to` object. These objects accept the same [CSS-in-JS syntax as Tailwind](https://tailwindcss.com/docs/plugins#css-in-js-syntax).

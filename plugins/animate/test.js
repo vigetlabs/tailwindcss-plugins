@@ -31,13 +31,19 @@ test('it generates the animate classes', () => {
               opacity: 1,
             },
           },
+          'zoom-in': {
+            from: {
+              transform: 'scale(0.8)',
+              opacity: 0,
+            },
+          },
         },
       },
     },
   }
 
   const output = `
-    .animate-fade-left, .stagger-fade-left > * {
+    .animate-fade-left:not(.-observed), .stagger-fade-left:not(.-observed) > * {
       transform: translateX(-20px);
       opacity: 0;
     }
@@ -45,6 +51,11 @@ test('it generates the animate classes', () => {
     .animate-fade-left.-observed, .stagger-fade-left.-observed > * {
       transform: translateX(0);
       opacity: 1;
+    }
+
+    .animate-zoom-in:not(.-observed), .stagger-zoom-in:not(.-observed) > * {
+      transform: scale(0.8);
+      opacity: 0;
     }
 
     [class*="stagger-"] > * {

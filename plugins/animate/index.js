@@ -11,12 +11,26 @@ module.exports = plugin(({ addUtilities, e, theme }) => {
   } = pluginConfig
 
   const animationUtilities = Object.entries(animations).map(
-    ([name, config]) => ({
-      [`.${e(`animate-${name}`)}, .${e(`stagger-${name}`)} > *`]: config.from,
-      [`.${e(`animate-${name}`)}.${e(triggerClass)},.${e(
-        `stagger-${name}`,
-      )}.${triggerClass} > *`]: config.to,
-    }),
+    ([name, config]) => {
+      const from = {
+        [`.${e(`animate-${name}`)}:not(.${e(triggerClass)}), .${e(
+          `stagger-${name}`,
+        )}:not(.${e(triggerClass)}) > *`]: config.from,
+      }
+
+      const to = config.to
+        ? {
+            [`.${e(`animate-${name}`)}.${e(triggerClass)},.${e(
+              `stagger-${name}`,
+            )}.${triggerClass} > *`]: config.to,
+          }
+        : {}
+
+      return {
+        ...from,
+        ...to,
+      }
+    },
   )
 
   const staggerDefaultUtility = staggerInterval.default
