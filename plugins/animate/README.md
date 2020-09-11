@@ -42,19 +42,23 @@ plugins: [
 
 ### Markup Examples
 
-- Animate a single element (pending addition of `triggerClass`)
+#### Animate a single element (pending addition of `triggerClass`)
 
 ```html
 <div class="animate-fade-up">Hello!</div>
 ```
 
-- Animate a single element after a delay
+---
+
+#### Animate a single element after a delay
 ```html
 <div class="animate-fade-up delay-200">Hello</div>
 ```
-N.b. `delay-` is a first-party Tailwind utility
+> N.b. `delay-` is a first-party Tailwind utility
 
-- Stagger the animation of multiple elements, using the specified default interval
+---
+
+#### Stagger the animation of multiple elements, using the specified default interval
 ```html
 <ul class="stagger-fade-up">
   <li class="duration-500">1</li>
@@ -62,9 +66,11 @@ N.b. `delay-` is a first-party Tailwind utility
   <li class="duration-500">3</li>
 </ul>
 ```
-N.b. `duration-` is a first-party Tailwind utility and **is required** on the child element unless a `transition-duration` is otherwise specified. This plugin doesn not apply a default duration in order to preserve customizability using the `duration-` utilities.
+> N.b. `duration-` is a first-party Tailwind utility and **is required** on the child element unless a `transition-duration` is otherwise specified. This plugin doesn not apply a default duration in order to preserve customizability using the `duration-` utilities.
 
-- Stagger the animation of multiple elements, overriding default interval
+---
+
+#### Stagger the animation of multiple elements, overriding default interval
 ```html
 <ul class="stagger-fade-up stagger-interval-200">
   <li class="duration-500">1</li>
@@ -73,7 +79,9 @@ N.b. `duration-` is a first-party Tailwind utility and **is required** on the ch
 </ul>
 ```
 
-- Stagger the animation of multiple elements, using specified interval, but delay the start
+---
+
+#### Stagger the animation of multiple elements, using specified interval, but delay the start
 ```html
 <ul class="stagger-fade-up stagger-interval-200 stagger-delay-100">
   <li class="duration-500">1</li>
@@ -84,17 +92,22 @@ N.b. `duration-` is a first-party Tailwind utility and **is required** on the ch
 
 ## Configuration
 
-- `triggerClass`
+### `triggerClass`
+
 Specify the class name that will be dynamically added to the element. Typically this class is added to indicate that the element has entered the viewport.
 
-- `staggerDelay`
+### `staggerDelay`
+
 Specify the delays for starting the staggered animations. It probably makes the most sense to simply set this to `theme('transitionDelay')`.
 
-- `staggerInterval`
+### `staggerInterval`
+
 Specify the amount of time in between the staggered animations. While optional, it is recommended to add a `default` entry to this object. Doing so allows you to use the `stagger-[animation]` class without specifying any `stagger-interval-[time]`.
 
-- `maxItemIntervalSupport`
+### `maxItemIntervalSupport`
+
 The `transition-delay` used to power the staggered animation are calculated via a custom property on the child elements called `--animate-index`. This setting allows you to decide how many `nth-child` selectors should be automatically output with this custom property so you do not need to add it by hand. 
 
-- `animations`
+### `animations`
+
 Specify the animation styles. The first-level object names the animation, which in turn must specify `from` and `to` objects. These objects accept the same [CSS-in-JS syntax as Tailwind](https://tailwindcss.com/docs/plugins#css-in-js-syntax).
