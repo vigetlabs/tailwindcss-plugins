@@ -3,6 +3,7 @@
 This plugin wraps up a collection of other plugins we've written for [Tailwind CSS](https://tailwindcss.com/).
 
 Plugins include:
+* [animate](/plugins/animate/)
 * [animation](/plugins/animation/)
 * [background](/plugins/background/)
 * [blend](/plugins/blend/)
