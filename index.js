@@ -1,4 +1,5 @@
 module.exports = {
+  animate: require('./plugins/animate'),
   animation: require('./plugins/animation'),
   background: require('./plugins/background'),
   blend: require('./plugins/blend'),
