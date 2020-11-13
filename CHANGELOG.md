@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - n/a
 
+### Changed
+- Updated Tailwind to 1.6
+
 ## [0.0.11] - 09-15-2020
 ### Fixed
 - Fixed missing export, missing README update
