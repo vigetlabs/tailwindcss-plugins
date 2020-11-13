@@ -27,6 +27,6 @@
     "lodash": "^4.17.15",
     "postcss": "^7.0.29",
     "prettier": "^2.0.5",
-    "tailwindcss": "^1.2.0"
+    "tailwindcss": "^1.6.0"
   }
 }
