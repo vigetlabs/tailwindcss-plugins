@@ -25,6 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.9] - 08-25-2020
 ### Added
 - Added .sr-undo-absolute utility
+- Added testing via CircleCI
 
 ## [0.0.8] - 05-06-2020
 ### Fixed
