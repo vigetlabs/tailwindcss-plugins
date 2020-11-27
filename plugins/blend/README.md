@@ -15,7 +15,7 @@ variants: {
   blend: ['responsive'], // defaults to []
 },
 plugins: [
-  require('@viget/tailwindcss-plugins/blend'),
+  require('@viget/tailwindcss-plugins/plugins/blend'),
 ],
 ```
 

@@ -40,7 +40,7 @@ const { em, rem, remPair, pxPair } = require('@viget/tailwindcss-plugins/utiliti
 
 // plugins
 plugins: [
-  require('@viget/tailwindcss-plugins/PLUGIN_NAME'),
+  require('@viget/tailwindcss-plugins/plugins/PLUGIN_NAME'),
   // ...
 ],
 ```

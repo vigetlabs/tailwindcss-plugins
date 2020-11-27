@@ -19,7 +19,7 @@ variants: {
   filter: ['responsive'], // defaults to []
 },
 plugins: [
-  require('@viget/tailwindcss-plugins/filter'),
+  require('@viget/tailwindcss-plugins/plugins/filter'),
 ],
 ```
 

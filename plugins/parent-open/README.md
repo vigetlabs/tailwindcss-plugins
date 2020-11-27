@@ -14,8 +14,7 @@ variants: {
   rotate: ['parent-open'],
 },
 plugins: [
-  require('@viget/tailwindcss-plugins/parent-open'),
-  // ...
+  require('@viget/tailwindcss-plugins/plugins/parent-open'),
 ],
 ```
 

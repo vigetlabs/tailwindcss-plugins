@@ -14,7 +14,7 @@ variants: {
   flexBasis: ['responsive'], // defaults to []
 },
 plugins: [
-  require('@viget/tailwindcss-plugins/flex-basis'),
+  require('@viget/tailwindcss-plugins/plugins/flex-basis'),
 ],
 ```
 

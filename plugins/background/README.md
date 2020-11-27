@@ -16,7 +16,7 @@ variants: {
   background: ['responsive'], // defaults to []
 },
 plugins: [
-  require('@viget/tailwindcss-plugins/background'),
+  require('@viget/tailwindcss-plugins/plugins/background'),
 ],
 ```
 

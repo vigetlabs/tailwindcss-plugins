@@ -14,8 +14,7 @@ variants: {
   rotate: ['parent-expanded'],
 },
 plugins: [
-  require('@viget/tailwindcss-plugins/parent-expanded'),
-  // ...
+  require('@viget/tailwindcss-plugins/plugins/parent-expanded'),
 ],
 ```
 

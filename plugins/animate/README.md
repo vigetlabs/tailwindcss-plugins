@@ -43,7 +43,7 @@ theme: {
   }),
 },
 plugins: [
-  require('@viget/tailwindcss-plugins/animate'),
+  require('@viget/tailwindcss-plugins/plugins/animate'),
 ],
 ```
 

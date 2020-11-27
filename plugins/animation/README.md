@@ -17,7 +17,7 @@ theme: {
   },
 },
 plugins: [
-  require('@viget/tailwindcss-plugins/animation'),
+  require('@viget/tailwindcss-plugins/plugins/animation'),
 ],
 ```
 

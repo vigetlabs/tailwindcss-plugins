@@ -15,7 +15,7 @@ variants: {
   gradient: ['responsive'], // defaults to []
 },
 plugins: [
-  require('@viget/tailwindcss-plugins/gradient'),
+  require('@viget/tailwindcss-plugins/plugins/gradient'),
 ],
 ```
 
