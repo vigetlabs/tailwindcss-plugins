@@ -18,6 +18,23 @@ plugins: [
 ],
 ```
 
+or
+
+```js
+const vigetPlugins = require('@viget/tailwindcss-plugins')
+module.exports = {
+  variants: {
+    sr: ['responsive'], // defaults to []
+  },
+  corePlugins: [
+    accessibility: false,
+  ],
+  plugins: [
+    vigetPlugins.sr,
+  ],
+}
+```
+
 The above configuration would create the following css, as well as their responsive variants:
 
 ```css

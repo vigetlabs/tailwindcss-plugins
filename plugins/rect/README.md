@@ -19,6 +19,26 @@ plugins: [
 ],
 ```
 
+or
+
+```js
+const vigetPlugins = require('@viget/tailwindcss-plugins')
+module.exports = {
+  theme: {
+    rect: {
+      target: [44, 44],
+      '24': [24, 24],
+    },
+  }
+  variants: {
+    rect: ['responsive'],
+  },
+  plugins: [
+    vigetPlugins.rect,
+  ],
+}
+```
+
 The above configuration would create the following css, as well as their responsive variants:
 
 ```css

@@ -47,6 +47,50 @@ plugins: [
 ],
 ```
 
+or
+
+```js
+const vigetPlugins = require('@viget/tailwindcss-plugins')
+module.exports = {
+  theme: {
+    animate: (theme) => ({
+      triggerClass: '-observed',
+      staggerDelay: {
+        '100': '100ms',
+        '200': '200ms',
+        ...theme('transitionDelay'),
+      },
+      staggerInterval: {
+        default: '100ms',
+        '200': '200ms',
+        ...theme('transitionDelay'),
+      },
+      maxItemIntervalSupport: 9,
+      animations: {
+        'fade-up': {
+          from: {
+            transform: 'translateY(20px)',
+            opacity: 0,
+          },
+          to: {
+            transform: 'translateY(0)',
+            opacity: 1,
+          },
+        },
+        'zoom-in': {
+          from: {
+            transform: 'scale(0.8)',
+            opacity: 0,
+          },
+          // "to" is optional
+        },
+      },
+    }),
+  },
+  plugins: [vigetPlugins.animate],
+}
+```
+
 ### Markup Examples
 
 #### Animate a single element (pending addition of `triggerClass`)

@@ -31,7 +31,7 @@ yarn add @viget/tailwindcss-plugins -D
 
 ## Usage
 
-Simply require the plugins or utilities in your `tailwindcss.config.js` file, and follow the usage instructions for each documented in its folder.
+Simply require the plugins or utilities in your `tailwindcss.config.js` file. Plugin-specific instructions are in each plugin's README — see the [plugins directory](plugins/).
 
 ```js
 // utilities
@@ -40,10 +40,28 @@ const { em, rem, remPair, pxPair } = require('@viget/tailwindcss-plugins/utiliti
 
 // plugins
 plugins: [
-  require('@viget/tailwindcss-plugins/plugins/PLUGIN_NAME'),
+  require('@viget/tailwindcss-plugins/plugins/<plugin name>'),
   // ...
 ],
 ```
+
+Every plugin is also available as a node on the package's default export, so you can also
+
+```js
+// utilities
+const a = require('@viget/tailwindcss-plugins/utilities/alpha')
+const { em, rem, remPair, pxPair } = require('@viget/tailwindcss-plugins/utilities/fns')
+
+// plugins
+const vigetPlugins = require('@viget/tailwindcss-plugins')
+
+plugins: [
+  vigetPlugins.<plugin handle>,
+  // ...
+],
+```
+
+See [index.js](index.js) or the plugins' READMEs for the handles.
 
 ## Testing
 

@@ -18,6 +18,15 @@ plugins: [
 ],
 ```
 
+or
+
+```js
+const vigetPlugins = require('@viget/tailwindcss-plugins')
+module.exports = {
+  plugins: [vigetPlugins.parentOpen],
+}
+```
+
 The above configuration would create the following css:
 
 ```css

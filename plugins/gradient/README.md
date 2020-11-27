@@ -19,6 +19,24 @@ plugins: [
 ],
 ```
 
+or
+
+```js
+const vigetPlugins = require('@viget/tailwindcss-plugins')
+module.exports = {
+  theme: {
+    gradient: theme => ({
+      '90-blue': `90deg, ${theme('colors.blue.400')} 50%, transparent`,
+      '270-blue': `270deg, ${theme('colors.blue.400')}, transparent`
+    }),
+  },
+  variants: {
+    gradient: ['responsive'], // defaults to []
+  },
+  plugins: [vigetPlugins.gradient],
+}
+```
+
 The above configuration would create the following css, as well as their responsive variants:
 
 ```css

@@ -21,6 +21,26 @@ plugins: [
 ],
 ```
 
+or
+
+```js
+const vigetPlugins = require('@viget/tailwindcss-plugins')
+module.exports = {
+  theme: {
+    animation: {
+      spin: {
+        animation: '1s infinite linear',
+        keyframes: {
+          from: { transform: 'rotate(0deg)' },
+          to: { transform: 'rotate(360deg)' },
+        },
+      },
+    },
+  },
+  plugins: [vigetPlugins.animation],
+}
+```
+
 Note that this plugin does not accept **variants** so you do not need to add anything to that object.
 
 The above configuration would create the following css:

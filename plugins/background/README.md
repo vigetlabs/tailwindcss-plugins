@@ -20,6 +20,25 @@ plugins: [
 ],
 ```
 
+or
+
+```js
+const vigetPlugins = require('@viget/tailwindcss-plugins')
+module.exports = {
+  theme: {
+    background: {
+      glow:
+        'radial-gradient(58.13% 57.41% at 49.33% 78.4%, rgba(208, 2, 27, 0.6) 0%)',
+      texture: `#111 url('../assets/images/texture.png') 0 0 / 24px 26px`,
+    },
+  },
+  variants: {
+    background: ['responsive'], // defaults to []
+  },
+  plugins: [vigetPlugins.background],
+}
+```
+
 The above configuration would create the following css, as well as their responsive variants:
 
 ```css
