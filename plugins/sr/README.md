@@ -14,7 +14,7 @@ corePlugins: [
   accessibility: false,
 ],
 plugins: [
-  require('@viget/tailwindcss-plugins/sr'),
+  require('@viget/tailwindcss-plugins/plugins/sr'),
 ],
 ```
 
