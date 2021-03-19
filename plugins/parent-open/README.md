@@ -1,6 +1,6 @@
 # parent-open
 
-This plugin adds parent-open variants to Tailwind. This is intended for use with the [HTML Details Element (<details>)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details).
+This plugin adds parent-open variants to Tailwind. This is intended for use with the [HTML Details Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details).
 
 ## Usage
 
