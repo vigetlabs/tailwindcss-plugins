@@ -15,8 +15,26 @@ variants: {
   blend: ['responsive'], // defaults to []
 },
 plugins: [
-  require('@viget/tailwindcss-plugins/blend'),
+  require('@viget/tailwindcss-plugins/plugins/blend'),
 ],
+```
+
+or
+
+```js
+const vigetPlugins = require('@viget/tailwindcss-plugins')
+module.exports = {
+  theme: {
+    blend: [
+      'multiply',
+      'screen',
+    ],
+  },
+  variants: {
+    blend: ['responsive'], // defaults to []
+  },
+  plugins: [vigetPlugins.blend],
+}
 ```
 
 The above configuration would create the following css, as well as their responsive variants:

@@ -14,9 +14,17 @@ variants: {
   rotate: ['parent-open'],
 },
 plugins: [
-  require('@viget/tailwindcss-plugins/parent-open'),
-  // ...
+  require('@viget/tailwindcss-plugins/plugins/parent-open'),
 ],
+```
+
+or
+
+```js
+const vigetPlugins = require('@viget/tailwindcss-plugins')
+module.exports = {
+  plugins: [vigetPlugins.parentOpen],
+}
 ```
 
 The above configuration would create the following css:

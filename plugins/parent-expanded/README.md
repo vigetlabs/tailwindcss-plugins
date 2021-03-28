@@ -14,9 +14,25 @@ variants: {
   rotate: ['parent-expanded'],
 },
 plugins: [
-  require('@viget/tailwindcss-plugins/parent-expanded'),
-  // ...
+  require('@viget/tailwindcss-plugins/plugins/parent-expanded'),
 ],
+```
+
+or
+
+```js
+const vigetPlugins = require('@viget/tailwindcss-plugins')
+module.exports = {
+  theme: {
+    rotate: {
+      '180': '180deg',
+    },
+  },
+  variants: {
+    rotate: ['parent-expanded'],
+  },
+  plugins: [vigetPlugins.parentExpanded],
+}
 ```
 
 The above configuration would create the following css:

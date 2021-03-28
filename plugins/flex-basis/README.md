@@ -14,8 +14,25 @@ variants: {
   flexBasis: ['responsive'], // defaults to []
 },
 plugins: [
-  require('@viget/tailwindcss-plugins/flex-basis'),
+  require('@viget/tailwindcss-plugins/plugins/flex-basis'),
 ],
+```
+
+or
+
+```js
+const vigetPlugins = require('@viget/tailwindcss-plugins')
+module.exports = {
+  theme: {
+    flexBasis: {
+      '200': '200px',
+    },
+  },
+  variants: {
+    flexBasis: ['responsive'], // defaults to []
+  },
+  plugins: [vigetPlugins.flexBasis],
+}
 ```
 
 The above configuration would create the following css, as well as their responsive variants:

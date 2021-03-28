@@ -19,8 +19,30 @@ variants: {
   filter: ['responsive'], // defaults to []
 },
 plugins: [
-  require('@viget/tailwindcss-plugins/filter'),
+  require('@viget/tailwindcss-plugins/plugins/filter'),
 ],
+```
+
+or
+
+```js
+const vigetPlugins = require('@viget/tailwindcss-plugins')
+module.exports = {
+  theme: {
+    filter: {
+      blur: {
+        10: '10px',
+      },
+      saturate: {
+        0: 0,
+      },
+    },
+  },
+  variants: {
+    filter: ['responsive'], // defaults to []
+  },
+  plugins: [vigetPlugins.filter],
+}
 ```
 
 The above configuration would create the following css, as well as their responsive variants:
