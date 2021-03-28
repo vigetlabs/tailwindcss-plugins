@@ -1,5 +1,7 @@
 # animation
 
+_This plugin has been **deprecated**. Consider using Tailwind's animation utilities (1.6+) instead._
+
 This plugin adds [animation](https://developer.mozilla.org/en-US/docs/Web/CSS/animation) utilities with [@keyframes](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes) to Tailwind.
 
 ## Usage
