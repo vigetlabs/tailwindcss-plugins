@@ -7,6 +7,7 @@ Plugins include:
 * [parent-open](/plugins/parent-open/)
 * [rect](/plugins/rect/)
 * [sr](/plugins/sr/)
+* [text-underline-position](/plugins/text-underline-position/)
 
 Utilities include:
 * [hex alpha reference](/utilities/alpha/)
