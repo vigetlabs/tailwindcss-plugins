@@ -21,10 +21,11 @@ test('it generates the parent-expanded classes', () => {
 
   const output = `
     .rotate-180 {
-      --transform-rotate: 180deg;
+      --tw-rotate: 180deg;
     }
+
     [aria-expanded="true"] .parent-expanded\\:rotate-180 {
-      --transform-rotate: 180deg;
+      --tw-rotate: 180deg;
     }
   `
 

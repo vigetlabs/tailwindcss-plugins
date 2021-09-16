@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - n/a
 
 ### Changed
+- Updated Tailwind to 2.2.15
 - Updated Tailwind to 1.6
 
 ### Deprecated

@@ -21,10 +21,10 @@ test('it generates the parent-open classes', () => {
 
   const output = `
     .rotate-180 {
-      --transform-rotate: 180deg;
+      --tw-rotate: 180deg;
     }
     [open] .parent-open\\:rotate-180 {
-      --transform-rotate: 180deg;
+      --tw-rotate: 180deg;
     }
   `
 
