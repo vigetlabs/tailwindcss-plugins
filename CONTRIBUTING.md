@@ -1,26 +1,20 @@
 # Contributing
 
-Please take a moment to review this document before submitting a pull request.
+Please review this document before submitting a pull request.
 
 ## Coding standards
 
-Our code formatting rules are defined in .prettierrc. You can automatically format your code against these standards by running:
-
-```bash
-yarn format
-```
+Our code formatting rules are defined in .prettierrc. Use [Prettier](https://prettier.io/) to format your code against these standards by running `package.json`'s `format` script. Method varies by Node.js package manager, e.g. `yarn format`.
 
 ## Running tests
 
-You can run the test suite using the following commands:
+To test all plugins, run `package.json`'s `test` script. Method varies by Node.js package manager, e.g. `yarn test`.
 
-```bash
-yarn test
-```
+To test a specific plugin, run `package.json`'s `test` script passing it the test file's path. Method varies by Node.js package manager, e.g. `yarn test plugins/my-plugin/test`.
 
 ## Writing tests
 
-Each plugin is tested using Jest. The easiest way to get started is by looking at existing tests.
+Each plugin is tested using [Jest](https://jestjs.io/). The easiest way to get started is by looking at existing tests.
 
 ### Structure
 
@@ -33,4 +27,4 @@ Each plugin is tested using Jest. The easiest way to get started is by looking a
 ## Documenting changes and releases
 
 - Add notes to the unreleased section in the CHANGELOG, with summaries of any additions, fixes, updates, or deprecations.
-- When a new version is released, those notes will be moved to the appropriate version number in the CHANGELOG.
+- When a new version is released, a maintainer will move those notes to the appropriate version number in the CHANGELOG.

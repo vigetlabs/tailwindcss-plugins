@@ -14,17 +14,11 @@ Utilities include:
 
 ## Installation
 
-```bash
-# install via npm
-npm i @viget/tailwindcss-plugins -D
-
-# install via yarn
-yarn add @viget/tailwindcss-plugins -D
-```
+Add `@viget/tailwindcss-plugins` to your `package.json` `devDependencies`. Method varies by Node package manager, e.g. `yarn add -D @viget/tailwindcss-plugins`.
 
 ## Usage
 
-Simply require the plugins or utilities in your `tailwindcss.config.js` file, and follow the usage instructions for each documented in its folder.
+Simply require the plugins or utilities in your `tailwindcss.config.js` file, and follow the usage instructions in the plugin's README (e.g. `https://github.com/vigetlabs/tailwindcss-plugins/plugins/PLUGIN_NAME/README.md`).
 
 ```js
 // utilities
@@ -38,12 +32,22 @@ plugins: [
 ],
 ```
 
+## Contributing
+
+Please review [CONTRIBUTING.md](./CONTRIBUTING.md) before submitting a pull request.
+
+To get started with local development,
+
+1. Install the `.nvmrc` Node.js version. Method varies by Node.js version manager, e.g. run `asdf install`.
+1. Install `package.json` dependencies. Versions are locked in `yarn.lock`, so installing them with Yarn is recommended: run `yarn`.
+
+See our [How to use local Node packages as project dependencies](https://www.viget.com/articles/how-to-use-local-unpublished-node-packages-as-project-dependencies/) article to use your development version in a project.
+
 ## Testing
 
-Run tests:
-```bash
-yarn test
-```
+To test all plugins, run `package.json`'s `test` script. Method varies by Node.js package manager, e.g. `yarn test`.
+
+To test a specific plugin, run `package.json`'s `test` script passing it the test file's path. Method varies by Node.js package manager, e.g. `yarn test plugins/my-plugin/test`.
 
 ## Notes
 
