@@ -1,8 +1,6 @@
 const plugin = require('tailwindcss/plugin')
 
-module.exports = plugin(({ addUtilities, variants }) => {
-  const pluginVariants = variants('sr', [])
-
+module.exports = plugin(({ addUtilities }) => {
   const sr = {
     '.sr-only': {
       border: '0',
@@ -32,5 +30,5 @@ module.exports = plugin(({ addUtilities, variants }) => {
     },
   }
 
-  addUtilities(sr, pluginVariants)
+  addUtilities(sr)
 })
