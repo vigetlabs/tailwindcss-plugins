@@ -4,7 +4,6 @@ This plugin wraps up a collection of other plugins we've written for [Tailwind C
 
 Plugins include:
 * [animate](/plugins/animate/)
-* [animation](/plugins/animation/)
 * [background](/plugins/background/)
 * [blend](/plugins/blend/)
 * [filter](/plugins/filter/)
