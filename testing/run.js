@@ -14,9 +14,9 @@ module.exports = {
       ...{ plugins: [plugin], corePlugins: { preflight: false } },
       ...config,
     }
-  
+
     return postcss(tailwindcss(config)).process(input, {
       from: `${path.resolve(__filename)}?test=${currentTestName}`,
     })
-  }
+  },
 }

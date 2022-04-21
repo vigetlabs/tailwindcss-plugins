@@ -8,11 +8,15 @@ expect.extend({
 
 it('should generate the sr classes', () => {
   const config = {
-    content: [{ raw: String.raw`
+    content: [
+      {
+        raw: String.raw`
       <span class="sr-only">text</span>
       <span class="sr-undo">text</span>
       <span class="sr-undo-absolute">text</span>
-    ` }],
+    `,
+      },
+    ],
     corePlugins: {
       accessibility: false,
     },

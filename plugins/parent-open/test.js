@@ -8,13 +8,17 @@ expect.extend({
 
 it('should generate the parent-open classes', () => {
   const config = {
-    content: [{ raw: String.raw`
+    content: [
+      {
+        raw: String.raw`
       <details open>
         <summary>
           <span class="parent-open:rotate-180">&gt;</span>
         </summary>
       </details>
-    ` }],
+    `,
+      },
+    ],
   }
 
   const output = String.raw`
