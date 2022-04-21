@@ -1,10 +1,4 @@
 module.exports = {
-  animate: require('./plugins/animate'),
-  background: require('./plugins/background'),
-  blend: require('./plugins/blend'),
-  filter: require('./plugins/filter'),
-  flexBasis: require('./plugins/flex-basis'),
-  gradient: require('./plugins/gradient'),
   parentExpanded: require('./plugins/parent-expanded'),
   parentOpen: require('./plugins/parent-open'),
   rect: require('./plugins/rect'),
