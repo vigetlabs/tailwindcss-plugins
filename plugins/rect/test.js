@@ -8,14 +8,18 @@ expect.extend({
 
 it('should generate the rect classes', () => {
   const config = {
-    content: [{ raw: String.raw`
+    content: [
+      {
+        raw: String.raw`
       <button class="rect-44">🔍</button>
-    ` }],
+    `,
+      },
+    ],
     theme: {
       rect: {
         44: [44, 44],
       },
-    }
+    },
   }
 
   const output = String.raw`

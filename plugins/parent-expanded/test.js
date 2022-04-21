@@ -8,11 +8,15 @@ expect.extend({
 
 it('should generate the parent-expanded classes', () => {
   const config = {
-    content: [{ raw: String.raw`
+    content: [
+      {
+        raw: String.raw`
       <button aria-expanded="true">
         <span class="parent-expanded:rotate-180">&gt;</span>
       </button>
-    ` }],
+    `,
+      },
+    ],
   }
 
   const output = String.raw`
