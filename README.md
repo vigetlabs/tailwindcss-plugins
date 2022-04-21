@@ -3,12 +3,6 @@
 This plugin wraps up a collection of other plugins we've written for [Tailwind CSS](https://tailwindcss.com/).
 
 Plugins include:
-* [animate](/plugins/animate/)
-* [background](/plugins/background/)
-* [blend](/plugins/blend/)
-* [filter](/plugins/filter/)
-* [flex-basis](/plugins/flex-basis/)
-* [gradient](/plugins/gradient/)
 * [parent-expanded](/plugins/parent-expanded/)
 * [parent-open](/plugins/parent-open/)
 * [rect](/plugins/rect/)
