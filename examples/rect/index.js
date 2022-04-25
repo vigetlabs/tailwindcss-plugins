@@ -1,22 +1,13 @@
-module.exports = () => ({ addUtilities, e, theme, variants }) => {
-  const pluginConfig = theme('rect', {})
-  const pluginVariants = variants('rect', [])
+const plugin = require('tailwindcss/plugin')
 
-  const utilities = Object.entries(pluginConfig).map((obj) => {
-    // obj = ['target', ['44px', '44px']]
-    let valueIsArray = Array.isArray(obj[1])
-
-    if (valueIsArray) {
-      return {
-        [`.${e(`rect-${obj[0]}`)}`]: {
-          width: obj[1][0],
-          height: obj[1][1],
-        },
-      }
-    }
-  })
-
-  addUtilities(utilities, {
-    variants: pluginVariants,
-  })
-}
+module.exports = plugin(({ matchUtilities, theme }) => {
+  matchUtilities(
+    {
+      rect: (value) => ({
+        width: value[0],
+        height: value[1],
+      }),
+    },
+    { values: theme('rect') },
+  )
+})
