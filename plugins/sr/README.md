@@ -7,9 +7,6 @@ This plugin adds screenreader utilities to Tailwind. Tailwind ships with its own
 ## Usage
 
 ```js
-variants: {
-  sr: ['responsive'], // defaults to []
-},
 corePlugins: [
   accessibility: false,
 ],

@@ -11,9 +11,6 @@ theme: {
     '24': ['24px', '24px'],
   },
 }
-variants: {
-  rect: ['responsive'],
-},
 plugins: [
   require('./config/tailwind/rect'),
 ],
