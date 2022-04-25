@@ -13,6 +13,7 @@ theme: {
 }
 plugins: [
   require('./config/tailwind/rect'),
+  // ...
 ],
 ```
 

@@ -13,6 +13,7 @@ theme: {
 }
 plugins: [
   require('@viget/tailwindcss-plugins/rect'),
+  // ...
 ],
 ```
 
