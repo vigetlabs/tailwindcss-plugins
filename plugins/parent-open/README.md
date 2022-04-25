@@ -10,9 +10,6 @@ theme: {
     '180': '180deg',
   },
 }
-variants: {
-  rotate: ['parent-open'],
-},
 plugins: [
   require('@viget/tailwindcss-plugins/parent-open'),
   // ...

@@ -11,9 +11,6 @@ theme: {
     '24': [24, 24],
   },
 }
-variants: {
-  rect: ['responsive'],
-},
 plugins: [
   require('@viget/tailwindcss-plugins/rect'),
 ],
