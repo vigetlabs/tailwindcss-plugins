@@ -5,11 +5,9 @@ This plugin adds `text-underline-position` utilities to Tailwind.
 ## Usage
 
 ```js
-variants: {
-  textUnderlinePosition: ['responsive'],
-},
 plugins: [
   require('@viget/tailwindcss-plugins/text-underline-position'),
+  // ...
 ],
 ```
 
