@@ -48,11 +48,8 @@ Each plugin is tested using [Jest](https://jestjs.io/). The easiest way to get s
 
 ### Structure
 
-- Output (required): Define what the generated CSS should look like. Jest makes this easy to debug but some things to remember:
-  - Double-escape `:`, i.e. `\\:`
-  - Order matters
-  - Testing variants also generates the basic version of the class
-- Config (almost always required): Define the user config for generating the CSS. For a plugin like [sr](/plugins/sr), the only configurable thing we are testing is variants, but most plugins require a theme passed as well. Testing variant plugins requires also passing an array of enabled `corePlugins`, as these are all turned off by default (see [parent-expanded](/plugins/parent-expanded) for an example).
+- **Output**: Define what the generated CSS should look like.
+- **Config**: Define the content string to use for generating the CSS. Most plugins require a theme passed as well.
 
 ## Documenting changes and releases
 
