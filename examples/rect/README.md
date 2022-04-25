@@ -1,6 +1,6 @@
 # rect
 
-This plugin adds rect (width + height) sizing utilities to Tailwind. It is different from the [installable version in plugins](plugins/rect) in that it removes the dependancy on the rem function and allows for edge cases requiring other units like px for sizing.
+This plugin adds rect (width + height) sizing utilities to Tailwind. It is different from the [installable version](plugins/rect) in that it removes the dependancy on the rem function and allows for edge cases requiring other units like px for sizing.
 
 ## Usage
 
@@ -15,7 +15,7 @@ variants: {
   rect: ['responsive'],
 },
 plugins: [
-  require('@viget/tailwindcss-plugins/rect')(),
+  require('./config/tailwind/rect'),
 ],
 ```
 
