@@ -2,15 +2,45 @@
 
 Please review this document before submitting a pull request.
 
+## Setup
+
+To get started with local development,
+
+1. Install the correct version of Node.
+
+```bash
+asdf install
+```
+
+1. Install `package.json` dependencies. Versions are locked in `yarn.lock`, so installing them with Yarn is recommended.
+
+```bash
+yarn
+````
+
+See our [How to use local Node packages as project dependencies](https://www.viget.com/articles/how-to-use-local-unpublished-node-packages-as-project-dependencies/) article to use your development version in a project.
+
 ## Coding standards
 
-Our code formatting rules are defined in .prettierrc. Use [Prettier](https://prettier.io/) to format your code against these standards by running `package.json`'s `format` script. Method varies by Node.js package manager, e.g. `yarn format`.
+Our code formatting rules are defined in .prettierrc. You can format your code against these standards using [Prettier](https://prettier.io/) via the `format` script in `package.json`.
+
+```bash
+yarn format
+```
 
 ## Running tests
 
-To test all plugins, run `package.json`'s `test` script. Method varies by Node.js package manager, e.g. `yarn test`.
+To test all plugins, run the `test` script in `package.json`.
 
-To test a specific plugin, run `package.json`'s `test` script passing it the test file's path. Method varies by Node.js package manager, e.g. `yarn test plugins/my-plugin/test`.
+```bash
+yarn test
+```
+
+To test a specific plugin, run the `test` script in `package.json` passing it the test file's path.
+
+```bash
+yarn test plugins/my-plugin/test
+```
 
 ## Writing tests
 
