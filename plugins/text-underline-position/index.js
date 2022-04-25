@@ -20,9 +20,7 @@ const modifiableKeywords = ['under']
 
 const modifyingKeywords = ['left', 'right']
 
-module.exports = plugin(({ addUtilities, variants }) => {
-  const pluginVariants = variants('textUnderlinePosition', [])
-
+module.exports = plugin(({ addUtilities }) => {
   const utilities = {}
 
   const keywords = unmodifiableKeywords
@@ -44,5 +42,5 @@ module.exports = plugin(({ addUtilities, variants }) => {
     })
   })
 
-  addUtilities(utilities, pluginVariants)
+  addUtilities(utilities)
 })
