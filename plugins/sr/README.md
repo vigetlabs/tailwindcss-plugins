@@ -12,6 +12,7 @@ corePlugins: [
 ],
 plugins: [
   require('@viget/tailwindcss-plugins/sr'),
+  // ...
 ],
 ```
 
