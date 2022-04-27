@@ -5,15 +5,19 @@ This plugin adds parent-expanded variants to Tailwind. This is useful for access
 ## Usage
 
 ```js
-theme: {
-  rotate: {
-    '180': '180deg',
+const plugins = require('@viget/tailwindcss-plugins')
+
+module.exports = {
+  theme: {
+    rotate: {
+      '180': '180deg',
+    },
   },
-},
-plugins: [
-  require('@viget/tailwindcss-plugins/parent-expanded'),
-  // ...
-],
+  plugins: [
+    plugins.parentExpanded,
+    // ...
+  ],
+}
 ```
 
 The above configuration would create the following css:

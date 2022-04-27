@@ -7,13 +7,17 @@ This plugin adds screenreader utilities to Tailwind. Tailwind ships with its own
 ## Usage
 
 ```js
-corePlugins: [
-  accessibility: false,
-],
-plugins: [
-  require('@viget/tailwindcss-plugins/sr'),
-  // ...
-],
+const plugins = require('@viget/tailwindcss-plugins')
+
+module.exports = {
+  corePlugins: [
+    accessibility: false,
+  ],
+  plugins: [
+    plugins.sr,
+    // ...
+  ],
+}
 ```
 
 The above configuration would create the following css, as well as their responsive variants:

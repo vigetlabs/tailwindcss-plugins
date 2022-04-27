@@ -5,15 +5,19 @@ This plugin adds parent-open variants to Tailwind. This is intended for use with
 ## Usage
 
 ```js
-theme: {
-  rotate: {
-    '180': '180deg',
+const plugins = require('@viget/tailwindcss-plugins')
+
+module.exports = {
+  theme: {
+    rotate: {
+      '180': '180deg',
+    },
   },
+  plugins: [
+    plugins.parentOpen,
+    // ...
+  ],
 }
-plugins: [
-  require('@viget/tailwindcss-plugins/parent-open'),
-  // ...
-],
 ```
 
 The above configuration would create the following css:
