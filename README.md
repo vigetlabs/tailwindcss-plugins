@@ -23,7 +23,7 @@ yarn add -D @viget/tailwindcss-plugins
 
 ## Usage
 
-Simply require the plugins or utilities in your `tailwindcss.config.js` file, and follow the usage instructions in each plugin's README.
+Simply require the plugins or utilities in your `tailwindcss.config.js` file, and follow the usage instructions in each plugin’s README.
 
 ```js
 // utilities
@@ -41,7 +41,7 @@ plugins: [
 
 ## Notes
 
-There are some additional plugin examples included in this repository's **examples** directory. These are not registerable in your Tailwind config. The reasons for this are that these represent plugins which:
+There are some additional plugin examples included in this repository’s **examples** directory. These are not registerable in your Tailwind config. The reasons for this are that these represent plugins which:
 
 * could have a number of different outputs that require varying approaches
 * have a highly specific project use case
