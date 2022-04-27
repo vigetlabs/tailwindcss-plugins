@@ -36,7 +36,7 @@ To test all plugins, run the `test` script in `package.json`.
 yarn test
 ```
 
-To test a specific plugin, run the `test` script in `package.json` passing it the test file's path.
+To test a specific plugin, run the `test` script in `package.json` passing it the test file’s path.
 
 ```bash
 yarn test plugins/my-plugin/test
