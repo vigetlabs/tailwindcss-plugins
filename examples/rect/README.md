@@ -12,7 +12,7 @@ theme: {
   },
 }
 plugins: [
-  require('./config/tailwind/rect'),
+  require('./path/to/your/plugin'),
   // ...
 ],
 ```
