@@ -9,6 +9,6 @@ module.exports = plugin(({ matchUtilities, theme }) => {
         height: rem(value[1]),
       }),
     },
-    { values: theme('rect') },
+    { values: theme('rect') }
   )
 })
