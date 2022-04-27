@@ -11,58 +11,52 @@ plugins: [
 ],
 ```
 
-The above configuration would create the following css, as well as their responsive variants:
+The plugin will enable the following css, as well as their responsive variants:
 
 ```css
-.underline-above {
-  text-underline-position: above;
-}
-
 .underline-auto {
   text-underline-position: auto;
 }
-
-.underline-below {
-  text-underline-position: below;
+.underline-auto-left {
+  text-underline-position: auto left;
 }
-
+.underline-auto-right {
+  text-underline-position: auto right;
+}
+.underline-auto-under {
+  text-underline-position: auto under;
+}
 .underline-from-font {
   text-underline-position: from-font;
 }
-
-.underline-inherit {
-  text-underline-position: inherit;
+.underline-from-font-left {
+  text-underline-position: from-font left;
 }
-
-.underline-initial {
-  text-underline-position: initial;
+.underline-from-font-right {
+  text-underline-position: from-font right;
 }
-
+.underline-from-font-under {
+  text-underline-position: from-font under;
+}
 .underline-left {
   text-underline-position: left;
 }
-
-.underline-revert {
-  text-underline-position: revert;
-}
-
 .underline-right {
   text-underline-position: right;
 }
-
 .underline-under {
   text-underline-position: under;
 }
-
+.underline-inherit {
+  text-underline-position: inherit;
+}
+.underline-initial {
+  text-underline-position: initial;
+}
+.underline-revert {
+  text-underline-position: revert;
+}
 .underline-unset {
   text-underline-position: unset;
-}
-
-.underline-under-left {
-  text-underline-position: under left;
-}
-
-.underline-under-right {
-  text-underline-position: under right;
 }
 ```

@@ -5,41 +5,31 @@
 
 const plugin = require('tailwindcss/plugin')
 
-const unmodifiableKeywords = [
-  'above',
-  'auto',
-  'below',
-  'from-font',
-  'inherit',
-  'initial',
-  'revert',
-  'unset',
-]
-
-const modifiableKeywords = ['under']
-
-const modifyingKeywords = ['left', 'right']
-
 module.exports = plugin(({ addUtilities }) => {
   const utilities = {}
 
-  const keywords = unmodifiableKeywords
-    .concat(modifiableKeywords)
-    .concat(modifyingKeywords)
-    .sort((a, b) => a.localeCompare(b))
+  const placements = ['auto', 'from-font']
 
-  keywords.forEach((k) => {
-    utilities[`.underline-${k}`] = {
-      textUnderlinePosition: k,
+  const sides = ['left', 'right', 'under']
+
+  const sidesAndGlobals = [...sides, 'inherit', 'initial', 'revert', 'unset']
+
+  placements.forEach((p) => {
+    utilities[`.underline-${p}`] = {
+      textUnderlinePosition: p,
     }
-  })
 
-  modifiableKeywords.forEach((modifiable) => {
-    modifyingKeywords.forEach((modifying) => {
-      utilities[`.underline-${modifiable}-${modifying}`] = {
-        textUnderlinePosition: `${modifiable} ${modifying}`,
+    sides.forEach((s) => {
+      utilities[`.underline-${p}-${s}`] = {
+        textUnderlinePosition: `${p} ${s}`,
       }
     })
+  })
+
+  sidesAndGlobals.forEach((s) => {
+    utilities[`.underline-${s}`] = {
+      textUnderlinePosition: s,
+    }
   })
 
   addUtilities(utilities)
