@@ -11,140 +11,71 @@ it('should generate the text-underline-position classes', () => {
     content: [
       {
         raw: String.raw`
-          <span class="underline-above">Text</span>
           <span class="underline-auto">Text</span>
-          <span class="underline-below">Text</span>
+          <span class="underline-auto-left">Text</span>
+          <span class="underline-auto-right">Text</span>
+          <span class="underline-auto-under">Text</span>
           <span class="underline-from-font">Text</span>
-          <span class="underline-inherit">Text</span>
-          <span class="underline-initial">Text</span>
+          <span class="underline-from-font-left">Text</span>
+          <span class="underline-from-font-right">Text</span>
+          <span class="underline-from-font-under">Text</span>
           <span class="underline-left">Text</span>
-          <span class="underline-revert">Text</span>
           <span class="underline-right">Text</span>
           <span class="underline-under">Text</span>
+          <span class="underline-inherit">Text</span>
+          <span class="underline-initial">Text</span>
+          <span class="underline-revert">Text</span>
           <span class="underline-unset">Text</span>
-          <span class="underline-under-left">Text</span>
-          <span class="underline-under-right">Text</span>
-          <span class="hover:underline-above">Text</span>
-          <span class="hover:underline-auto">Text</span>
-          <span class="hover:underline-below">Text</span>
-          <span class="hover:underline-from-font">Text</span>
-          <span class="hover:underline-inherit">Text</span>
-          <span class="hover:underline-initial">Text</span>
-          <span class="hover:underline-left">Text</span>
-          <span class="hover:underline-revert">Text</span>
-          <span class="hover:underline-right">Text</span>
-          <span class="hover:underline-under">Text</span>
-          <span class="hover:underline-unset">Text</span>
-          <span class="hover:underline-under-left">Text</span>
-          <span class="hover:underline-under-right">Text</span>
         `,
       },
     ],
   }
 
   const output = String.raw`
-    .underline-above {
-      text-underline-position: above;
-    }
-
     .underline-auto {
       text-underline-position: auto;
     }
-
-    .underline-below {
-      text-underline-position: below;
+    .underline-auto-left {
+      text-underline-position: auto left;
     }
-
+    .underline-auto-right {
+      text-underline-position: auto right;
+    }
+    .underline-auto-under {
+      text-underline-position: auto under;
+    }
     .underline-from-font {
       text-underline-position: from-font;
     }
-
-    .underline-inherit {
-      text-underline-position: inherit;
+    .underline-from-font-left {
+      text-underline-position: from-font left;
     }
-
-    .underline-initial {
-      text-underline-position: initial;
+    .underline-from-font-right {
+      text-underline-position: from-font right;
     }
-
+    .underline-from-font-under {
+      text-underline-position: from-font under;
+    }
     .underline-left {
       text-underline-position: left;
     }
-
-    .underline-revert {
-      text-underline-position: revert;
-    }
-
     .underline-right {
       text-underline-position: right;
     }
-
     .underline-under {
       text-underline-position: under;
     }
-
-    .underline-unset {
-      text-underline-position: unset;
-    }
-
-    .underline-under-left {
-      text-underline-position: under left;
-    }
-
-    .underline-under-right {
-      text-underline-position: under right;
-    }
-
-    .hover\:underline-above:hover {
-      text-underline-position: above;
-    }
-
-    .hover\:underline-auto:hover {
-      text-underline-position: auto;
-    }
-
-    .hover\:underline-below:hover {
-      text-underline-position: below;
-    }
-
-    .hover\:underline-from-font:hover {
-      text-underline-position: from-font;
-    }
-
-    .hover\:underline-inherit:hover {
+    .underline-inherit {
       text-underline-position: inherit;
     }
-
-    .hover\:underline-initial:hover {
+    .underline-initial {
       text-underline-position: initial;
     }
-
-    .hover\:underline-left:hover {
-      text-underline-position: left;
-    }
-
-    .hover\:underline-revert:hover {
+    .underline-revert {
       text-underline-position: revert;
     }
-
-    .hover\:underline-right:hover {
-      text-underline-position: right;
-    }
-
-    .hover\:underline-under:hover {
-      text-underline-position: under;
-    }
-
-    .hover\:underline-unset:hover {
+    .underline-unset {
       text-underline-position: unset;
-    }
-
-    .hover\:underline-under-left:hover {
-      text-underline-position: under left;
-    }
-
-    .hover\:underline-under-right:hover {
-      text-underline-position: under right;
     }
   `
 
