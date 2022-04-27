@@ -22,7 +22,7 @@ it('should generate the sr classes', () => {
     },
   }
 
-  const output = `
+  const output = String.raw`
     .sr-only {
       border: 0;
       clip: rect(0 0 0 0);
