@@ -29,10 +29,12 @@ Simply require the plugins or utilities in your `tailwindcss.config.js` file, an
 // utilities
 const a = require('@viget/tailwindcss-plugins/utilities/alpha')
 const { em, rem, remPair, pxPair } = require('@viget/tailwindcss-plugins/utilities/fns')
+const plugins = require('@viget/tailwindcss-plugins')
 
 // plugins
 plugins: [
-  require('@viget/tailwindcss-plugins/PLUGIN_NAME'),
+  plugins.rect,
+  plugins.sr,
   // ...
 ],
 ```
