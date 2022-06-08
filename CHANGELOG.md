@@ -9,7 +9,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added the text-underline-position plugin
 
 ### Removed
-- Removed animate plugin
 - Removed animation plugin
 - Removed background plugin
 - Removed blend plugin
