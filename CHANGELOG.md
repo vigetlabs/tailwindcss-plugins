@@ -6,6 +6,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+- n/a
+
+### Removed
+- n/a
+
+### Changed
+- n/a
+
+### Deprecated
+- n/a
+
+## [3.0.0] - 06-13-2022
+### Added
 - Added the text-underline-position plugin
 
 ### Removed
