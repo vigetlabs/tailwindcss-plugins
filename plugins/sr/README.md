@@ -1,5 +1,7 @@
 # sr
 
+_This plugin has been **deprecated**. According to the latest comments in the [original h5bp issue thread](https://github.com/h5bp/main.css/issues/12) (linked from the blog post in the below issue description), the out-of-order reading is no longer occuring in macOS VoiceOver. It is now safe to use the original sr utilities in Tailwind!_
+
 This plugin adds screenreader utilities to Tailwind. Tailwind ships with its own variation, so you need to **turn off `accessibility` in the `corePlugins`.**
 
 [Read more discussion here](https://github.com/tailwindcss/tailwindcss/pull/964) on the default implementation compared to this plugin.
