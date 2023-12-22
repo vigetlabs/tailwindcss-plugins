@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Deprecated
 - Deprecate rect plugin
+- Deprecate sr plugin
 
 ## [3.0.0] - 06-13-2022
 ### Added
