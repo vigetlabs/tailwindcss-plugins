@@ -1,5 +1,7 @@
 # rect
 
+_This example has been **deprecated**. Consider using new [size utilities](https://tailwindcss.com/blog/tailwindcss-v3-4#new-size-utilities) in Tailwind 3.4 instead._
+
 This plugin adds rect (width + height) sizing utilities to Tailwind. It is different from the [installable version](plugins/rect) in that it removes the dependancy on the rem function and allows for edge cases requiring other units like px for sizing.
 
 ## Usage
